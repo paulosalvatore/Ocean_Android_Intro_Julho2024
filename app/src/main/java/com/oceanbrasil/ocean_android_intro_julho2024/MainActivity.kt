@@ -1,6 +1,8 @@
 package com.oceanbrasil.ocean_android_intro_julho2024
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,16 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        // Buscar o botão btEnviar
+        // Adicionar um Listener no botão, para detectar eventos de clique
+
+        val btEnviar = findViewById<Button>(R.id.btEnviar)
+        val tvResultado = findViewById<TextView>(R.id.tvResultado)
+
+        btEnviar.setOnClickListener {
+            tvResultado.text = "Samsung Ocean!"
         }
     }
 }
