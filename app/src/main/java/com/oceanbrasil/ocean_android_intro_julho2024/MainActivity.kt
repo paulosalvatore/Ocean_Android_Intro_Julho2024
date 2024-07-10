@@ -39,8 +39,15 @@ class MainActivity : AppCompatActivity() {
         // Encontro o btAbrirNovaTela e criar um ClickListener para ele
         val btAbrirNovaTela = findViewById<Button>(R.id.btAbrirNovaTela)
         btAbrirNovaTela.setOnClickListener {
+            // Criamos a Intent para criar a nova tela
             val novaTelaIntent = Intent(this, ResultadoActivity::class.java)
 
+            // Pegamos o nome digitado no EditText etNome
+            val nomeDigitado = etNome.text.toString()
+            // Inserimos o nome digitado na Intent via putExtra
+            novaTelaIntent.putExtra("NOME_DIGITADO", nomeDigitado)
+
+            // Iniciamos a Activity a partir da Intent
             startActivity(novaTelaIntent)
         }
     }
