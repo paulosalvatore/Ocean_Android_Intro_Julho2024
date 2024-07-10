@@ -1,5 +1,6 @@
 package com.oceanbrasil.ocean_android_intro_julho2024
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -33,6 +34,14 @@ class MainActivity : AppCompatActivity() {
             } else {
                 tvResultado.text = etNome.text
             }
+        }
+
+        // Encontro o btAbrirNovaTela e criar um ClickListener para ele
+        val btAbrirNovaTela = findViewById<Button>(R.id.btAbrirNovaTela)
+        btAbrirNovaTela.setOnClickListener {
+            val novaTelaIntent = Intent(this, ResultadoActivity::class.java)
+
+            startActivity(novaTelaIntent)
         }
     }
 }
