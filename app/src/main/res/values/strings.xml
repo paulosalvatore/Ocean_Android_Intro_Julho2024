@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Ocean_Android_Intro_Julho2024</string>
+    <string name="enviar">Enviar</string>
+    <string name="digite_o_seu_nome">Digite o seu nome</string>
+    <string name="abrir_nova_tela">Abrir Nova Tela</string>
+    <string name="o_resultado_aparecer_aqui">O resultado aparecerá aqui</string>
+    <string name="voltar">Voltar</string>
+    <string name="digite_um_nome_v_lido">Digite um nome válido!</string>
 </resources>

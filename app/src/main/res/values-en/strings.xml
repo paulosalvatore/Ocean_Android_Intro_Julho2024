@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ocean_Android_Intro_Julho2024</string>
+    <string name="enviar">Send</string>
+    <string name="digite_o_seu_nome">Insert your name</string>
+    <string name="abrir_nova_tela">Open New Screen</string>
+    <string name="o_resultado_aparecer_aqui">The result will be shown here</string>
+    <string name="voltar">Back</string>
+    <string name="digite_um_nome_v_lido">Insert a valid name</string>
+</resources>

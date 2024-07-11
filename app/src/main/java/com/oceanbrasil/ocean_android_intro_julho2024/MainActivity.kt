@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         btEnviar.setOnClickListener {
             if (etNome.text.isBlank()) {
-                etNome.error = "Digite um nome válido!"
+                etNome.error = getString(R.string.digite_um_nome_v_lido)
             } else {
                 tvResultado.text = etNome.text
             }
